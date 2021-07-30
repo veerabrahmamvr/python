@@ -1,0 +1,12 @@
+lists are mutables , indexable & ordered
+dictionaries are mutable , Non-indexable & unoredered
+tuples are immutables , indexable & ordered sequence
+sets are mutables , non-indexable & un-ordered
+strings are immutables , indexable & ordered.
+
+
+
+lists & dictionary are mutables
+tupes & sets are immutables
+lists & tuples are indexable
+dictionary & sets are Not-indexable
