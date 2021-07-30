@@ -8,3 +8,5 @@ pickle_example.py : --> Wrote simple code to understand the how pickle module wi
 
 
 tqdm_example.py  -->    This tqdm_example.py  is for to get some hands on tqdm module
+
+python3_practice  --> What ever is there in this directory , training given to the team members in 2018 Mentor Graphics
