@@ -1,0 +1,40 @@
+
+list is mutable
+list is indexable
+list is ordered
+
+
+tuple is immutable
+tuple is ordered
+tuple is indexable
+
+
+set is mutable
+set in non-indexable
+set is un-ordered
+
+dictionary is mutable
+dictionary is un-oredred
+dictionary is non-indexable
+
+
+string is immutable
+string is ordered
+string is indexable
+
+
+
+
+lists are mutables , indexable & ordered
+dictionaries are mutable , Non-indexable & unoredered
+tuples are immutables , indexable & ordered sequence
+sets are mutables , non-indexable & un-ordered
+strings are immutables , indexable & ordered.
+
+
+
+
+lists & dictionary are mutables
+tupes & sets are immutables
+lists & tuples are indexable
+dictionary & sets are Not-indexable
