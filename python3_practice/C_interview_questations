@@ -1,0 +1,181 @@
+https://www.edureka.co/blog/interview-questions/c-programming-interview-questions/
+https://www.intervue.io/-3NIUOPKV
+
+==>>>>>Q31. Explain Local Static Variables and what is their use?
+
+Ans: A local static variable is a variable whose life doesn’t end with a function call where it is declared. It extends for the lifetime of the complete program. All calls to the function share the same copy of local static variables.
+
+
+#include<stdio.h>
+void fun() 
+{ 
+    static int x; 
+    printf("%d ", x); 
+    x = x + 1; 
+} 
+int main() 
+{ 
+    fun(); 
+    fun(); 
+    return 0; 
+}
+//Output
+
+0 1
+
+
+==>>>>> What is the difference between declaring a header file with < > and ” “?
+
+
+==>>>>
+
+Q38. What are the different storage class specifiers in C?
+Ans: The different storage specifiers available in C Language are as follows:
+
+auto
+register
+static
+extern
+
+
+
+==>>>>>>
+Q40. Write a C program to print hello world without using a semicolon ;
+
+Ans: 
+
+#include<stdio.h>      
+void main()
+{      
+      if(printf("hello world")){} 
+}
+//Output:
+
+hello world
+
+
+
+===>>>>>>
+Q41. Write a program to swap two numbers without using the third variable.
+
+Ans:
+
+
+#include<stdio.h>      
+#include<conio.h>      
+main()      
+{      
+     int a=10, b=20;    
+     clrscr();       
+     printf("Before swapping a=%d b=%d",a,b);        
+     a=a+b;       
+     b=a-b;    
+     a=a-b;      
+     printf("nAfter swapping a=%d b=%d",a,b);      
+     getch();      
+}
+//Output
+
+ 
+ 
+ ==>>>>>>>>>>>>>>
+ Q45. How can you remove duplicates in an array?
+
+Ans: The following program will help you to remove duplicates from an array.
+
+#include <stdio.h>
+int main()
+{
+     int n, a[100], b[100], calc = 0, i, j,count;
+     printf("Enter no. of elements in array.n");
+     scanf("%d", &n);
+     printf("Enter %d integersn", n);
+     for (i = 0; i < n; i++)
+           scanf("%d", &a[i]);
+           for (i = 0; i<n; i++) 
+           {
+                 for (j = 0; j<calc; j++) 
+                 {
+                        if(a[i] == b[j])
+                        break;   
+                  }
+           if (j== calc)
+           {
+                  b[count] = a[i];
+                  calc++;  
+            }
+      }
+      printf("Array obtained after removing duplicate elementsn");
+      for (i = 0; i<calc; i++)
+      {  
+             printf("%dn", b[i]);
+      }
+      return 0;
+}
+//Output
+
+Enter no. of elements in array. 5
+Enter 5 integers
+12
+11
+11
+10
+4
+Array obtained after removing duplicate elements
+12
+11
+10
+4
+
+
+
+
+
+
+
+==>>>>>>>>
+Q46. What is Bubble Sort Algorithm? Explain with a program.
+
+Ans: Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. 
+
+The following code executes Bubble Sort.
+
+
+int main()
+{
+      int array[100], n, i, j, swap; 
+      printf("Enter number of elementsn");
+      scanf("%d", &n); 
+      printf("Enter %d Numbers:n", n); 
+      for(i = 0; i<n; i++)
+           scanf("%d", &array[i]); 
+           for(i = 0 ; i<n - 1; i++)
+           {
+                 for(j = 0 ; j < n-i-1; j++) { if(array[j]>array[j+1]) 
+                       {
+                               swap=array[j];
+                               array[j]=array[j+1];
+                               array[j+1]=swap;
+                       }
+                 }
+           } 
+           printf("Sorted Array:n"); 
+           for(i = 0; i < n; i++)
+                 printf("%dn", array[i]);
+           return 0;
+}
+
+
+==>>>>>>>>>>
+
+
+Q50. Differentiate between the macros and the functions.
+
+Ans: The differences between macros and functions can be explained as follows:
+
+Macro call replaces the templates with the expansion in a literal way.
+The Macro call makes the program run faster but also increases the program size.
+Macro is simple and avoids errors related to the function calls.
+In a function, call control is transferred to the function along with arguments.
+It makes the functions small and compact.
+Passing arguments and getting back the returned value takes time and makes the program run at a slower rate.
